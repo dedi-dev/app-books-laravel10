@@ -1,0 +1,12 @@
+1. php artisan make:model Book -m (-m = dengan migrasi)
+2. php artisan make:controller BooksController -r (-r = dengan resources function CRUD)
+3. config model Book
+4. config migrasi Book
+5. php artisan migrate
+6. php artisan tinker (terminal Laravel)
+ => use App\Model\Book
+ => Book::create(['title'=>'Bumi', 'author'=>'Tere Liye', 'page'=>300, 'year'=>2020])
+7. config routes/web.php tambahkan route untuk BooksController
+8. lengkapi function pada BooksController
+9. buat folder dan file untuk view Book pada /resources/views
+10. edit button paginate pada file ini \app-books\app\Providers\AppServiceProvider.php
